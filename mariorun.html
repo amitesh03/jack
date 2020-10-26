@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.mainMarioBg{
+			max-width: 80%;
+			height: 60vh;
+			background-image:url('mariobg.png');
+			background-size: 100% 100%;
+			position: relative;
+		}
+		.mario img{
+			position: absolute;
+			bottom: 55px;
+			animation-name: marioruns;
+			animation-duration: 6s;
+			animation-iteration-count: 5;
+			animation-timing-function: linear;
+
+		}
+		@keyframes mariorun{
+			0%{left: 0%;}
+			100%{ left: 88%; }
+		}
+
+		#mariotext{
+			color: white;
+			text-transform: uppercase;
+			font-size: 2em;
+			font-family: 'Bangers', cursive;
+			letter-spacing: 2px;
+			position: absolute;
+			top: 20%;
+			left: 40%;
+			animation: mariotext 4s linear;
+			animation-iteration-count: infinite;
+			animation-delay: 1s;
+		}
+
+		@keyframes mariootext{
+			0%{font-size: 2em;}
+			100%{font-size: 4em; left: 40%;}
+		}
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="mainMarioBg">
+		<div class="mario">
+			<img src="mariorun.gif" width="150px">
+			<h2 id="mariotext">mario run run</h2>
+		</div>
+	</div>
+
+</body>
+</html>
